@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AshrayaFoundation.net</title>
+    <link rel="shortcut icon" href="./fv2.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <div id="menu-jk" class="header-bottom">
+            <style>
+              /* Ensure logo container doesn't collapse and is aligned to the left */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Make the logo image responsive */
+.logo img {
+        max-width: 140%;
+    height: 140%; /* Maintain aspect ratio */
+}
+
+/* Adjust the fixed header properties */
+.header-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Add background color to the fixed header if needed */
+    z-index: 9999; /* Adjust the z-index as needed */
+}
+
+@media (max-width: 767px) {
+    .header-top {
+        position: fixed;
+    }
+}
+
+.custom-link {
+    background-color: rgb(107, 205, 136);
+    color: rgb(9, 1, 1);
+    animation: blink-animation 1s steps(2, start) infinite;
+    /* Add other custom styles here */
+}
+
+
+
+/* Flexbox for the nav-row to ensure alignment */
+.nav-row {
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust the navigation menu to align properly next to the logo */
+.nav-col {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+            </style>
+            <div class="container">
+                <div class="row nav-row">
+                    <div class="col-lg-3 col-md-12 logo">
+                        <a href="index.php">
+                            <img src="logo/neww sizw.png" alt="Logo" height="400px" width="600px">
+                        <style>
+                            
+                            
+                        </style>
+
+                            <a data-toggle="collapse" data-target="#menu" href="#menu"><i
+                                    class="fas d-block d-lg-none small-menu fa-bars"></i></a>
+                        </a>
+                    </div>
+                    <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
+                        <br>
+                        <ul class="navbad">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.php"><b>Home</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about_us.html"><b>About Us</b></a>
+                            </li>
+                                  <!-- <li class="nav-item">
+                                <a class="nav-link" href="stories.html"><b>Stories</b></a>
+                            </li> -->
+                       
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="gallery.html" id="galleryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Gallery</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="galleryDropdown">
+                                    <a class="dropdown-item" href="gallery.html">Gallery</a>
+                                    <a class="dropdown-item" href="stories.html">Success Stories</a>
+                                
+                                </div>
+                                <style>
+                                    .dropdown-menu {
+                                        background-color: #f8f9fa;
+                                        border: 1px solid #ccc;
+                                    }
+                                
+                                    .dropdown-item:hover {
+                                        background-color: #e9ecef;
+                                    }
+                                </style>
+                                
+                            </li>   
+
+                            </li>
+                          
+                             <li class="nav-item">
+                                <a class="nav-link" href=""><b>Donate Now</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-link" href="./login.php"><b>Apply Now</b></a>
+                            </li>
+                       
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <style>
+        .custom-body {
+            font-family: Arial, sans-serif;
+        }
+        .custom-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .custom-table-container {
+            width: 100%;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .custom-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+            margin: 20px 0;
+        }
+        .custom-th, .custom-td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+        .custom-th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+        .custom-note-container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 10px;
+            background: #ffe6e6;  /* Highlighted background color */
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .custom-note {
+            color: #cc0000;
+            text-align: center;
+            margin: 0;
+            font-weight: bold;
+        }
+    </style>
+    
+    <br>
+
+<div class="custom-body">
+    <div id="foundation-details" class="custom-container">
+        <h1 style="text-align: center; color: #333;">Donation_Enquiry</h1> <br>
+    </div>
+    
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const foundationData = {
+        registrationDetails: [
+            { label: 'PAN', value: 'AAETA8629D' },
+            { label: 'Income Tax Unique Registration Number', value: 'AAETA8629DE20217' },
+            { label: 'Charity Commissioner Registration Number', value: 'E 31308 Mumbai' },
+            { label: 'CSR Activities Registration Number', value: 'CSR00007369' }
+        ],
+        bankAccountDetails: [
+            { label: 'Name of Bank', value: 'HDFC Bank' },
+            { label: 'Account Number', value: '50200017038795' },
+            { label: 'Type of Account', value: 'Current Account' },
+            { label: 'Branch Code', value: '212' },
+            { label: 'IFSC Code', value: 'HDFC0000212' }
+        ]
+    };
+
+    const container = document.querySelector('.custom-container');
+
+    // Create a note container for the important message
+    const noteContainer = document.createElement('div');
+    noteContainer.classList.add('custom-note-container');
+    const note = document.createElement('p');
+    note.classList.add('custom-note');
+    note.textContent = 'Please Note - we are not eligible to accept donations from Non-Residents.';
+    noteContainer.appendChild(note);
+    container.appendChild(noteContainer);
+
+    // Create tables for registration and bank account details
+    createTable(foundationData.registrationDetails);
+    createTable(foundationData.bankAccountDetails);
+
+    function createTable(data) {
+        const tableContainer = document.createElement('div');
+        tableContainer.classList.add('custom-table-container');
+
+        const table = document.createElement('table');
+        table.classList.add('custom-table');
+
+        data.forEach(item => {
+            const row = document.createElement('tr');
+            const labelCell = document.createElement('th');
+            labelCell.classList.add('custom-th');
+            labelCell.textContent = item.label;
+
+            const valueCell = document.createElement('td');
+            valueCell.classList.add('custom-td');
+            valueCell.textContent = item.value;
+
+            row.appendChild(labelCell);
+            row.appendChild(valueCell);
+            table.appendChild(row);
+        });
+
+        tableContainer.appendChild(table);
+        container.appendChild(tableContainer);
+    }
+});
+
+  </script>
+
+<footer class="footer">
+<style type="text/css">@media screen and (max-width: 767px) {
+            .footer {
+                /* margin-left: 35px; */
+            }
+        }
+</style>
+<script>
+        function showqr() {
+            var imageContainer = document.querySelector('.qr');
+            if (imageContainer.style.display === 'none') {
+                imageContainer.style.display = 'block';
+            } else {
+                imageContainer.style.display = 'none';
+            }
+        }
+    </script><script>
+        function toggleImageSize() {
+            var image = document.getElementById('qr');
+            if (image.style.width === '80%') {
+                image.style.width = '100%';
+            } else {
+                image.style.width = '80%';
+            }
+        }
+    </script>
+<div class="container">
+<div class="row">
+<div class="col-md-4 col-sm-12" style="color: white;">
+<h2 style="color: white;">Talk to Us</h2>
+
+<div class="contact-info" style="margin-bottom: 15px;"><a href="mailto:ashraya7514@gmail.com" style="color: white; text-decoration: none;">ashraya7514@gmail.com</a></div>
+
+<div class="contact-info" style="margin-bottom: 15px;"><a href="tel:+919821302280" style="color: white; text-decoration: none;">+91 9821302280</a><br />
+<a href="tel:+919322244292" style="color: white; text-decoration: none;">+91 9322244292</a></div>
+</div>
+
+<div class="col-md-3 col-sm-12 map-img">
+<h2>Contact Us</h2>
+
+<address class="md-margin-bottom-40"><span>Meet us here:</span><br />
+A 2306, Oberoi Woods, Mohan Gokhale Rd, Goregaon, Mumbai, Maharashtra 400063<br />
+<span><a href="tel:+91 9821302280,">Phone: +91 9821302280 / 9322244292 </a></span><a href="tel:+91 9821302280,"> </a><br />
+<span><a href="mailto:ashraya7514@gmail.com">Email: ashraya7414@gmail.com</a></span><a href="mailto:ashraya7514@gmail.com"> </a><br />
+<span>Website: www.ashrayafoundation.net</span></address>
+</div>
+
+                    <div class="col-md-3 col-sm-12 map-img">
+                        <h2>Donation Details:</h2>
+                        <address class="md-margin-bottom-40">
+                           
+                            <!-- +91 9821302280 / 9322244292<br> -->
+                            <!-- ashraya7414@gmail.com <br> -->
+                            <!-- BRANCH: www.ashrayafoundation.net<br> -->
+                            Section 80G of the Income Tax Act, 1961, allows donors to claim deductions on donations made
+                            to
+                            eligible charitable organizations .
+                            <br>
+                            <br>
+                          
+                          <a href="donation.html"> <button onclick="scrollToSection('enq')"
+                                style="background-color:#5cc982; width: 140px; height: 40px; border-radius: 15px; cursor: pointer;" >
+                                
+                                Donate Now!
+                            </button>
+                            </a>
+                        </address>
+                    </div>
+</div>
+</div>
+</footer>
+
+<div class="copy">
+<style type="text/css">@media screen and (max-width: 767px) {
+            .copy {
+                /* margin-left: 25px; */
+            }
+        }
+</style>
+</div>
+
+<div class="copy">
+<style type="text/css">@media screen and (max-width: 767px) {
+            .copy {
+                /* margin-left: 25px; */
+            }
+        }
+</style>
+<div class="container">                <a href="https://www.ashrayafoundation.net/">2023 &copy; All Rights Reserved | Designed and Developed by Neural TechSoft</a><span>      </span></div>
+</div>
+</body>
+<script src="assets/js/jquery-3.2.1.min.js"></script><script src="assets/js/popper.min.js"></script><script src="assets/js/bootstrap.min.js"></script><script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script><script src="assets/plugins/slider/js/owl.carousel.min.js"></script><script src="assets/js/script.js"></script></html>

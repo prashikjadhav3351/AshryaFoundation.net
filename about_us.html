@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AshrayaFoundation.net</title>
+    <link rel="shortcut icon" href="./fv2.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <div id="menu-jk" class="header-bottom">
+            <style>
+              /* Ensure logo container doesn't collapse and is aligned to the left */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Make the logo image responsive */
+.logo img {
+        max-width: 140%;
+    height: 140%; /* Maintain aspect ratio */
+}
+
+/* Adjust the fixed header properties */
+.header-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Add background color to the fixed header if needed */
+    z-index: 9999; /* Adjust the z-index as needed */
+}
+
+@media (max-width: 767px) {
+    .header-top {
+        position: fixed;
+    }
+}
+
+.custom-link {
+    background-color: rgb(107, 205, 136);
+    color: rgb(9, 1, 1);
+    animation: blink-animation 1s steps(2, start) infinite;
+    /* Add other custom styles here */
+}
+
+
+
+/* Flexbox for the nav-row to ensure alignment */
+.nav-row {
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust the navigation menu to align properly next to the logo */
+.nav-col {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+            </style>
+            <div class="container">
+                <div class="row nav-row">
+                    <div class="col-lg-3 col-md-12 logo">
+                        <a href="index.php">
+                            <img src="logo/neww sizw.png" alt="Logo" height="400px" width="600px">
+                        <style>
+                            
+                            
+                        </style>
+
+                            <a data-toggle="collapse" data-target="#menu" href="#menu"><i
+                                    class="fas d-block d-lg-none small-menu fa-bars"></i></a>
+                        </a>
+                    </div>
+                    <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
+                        <br>
+                        <ul class="navbad">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.php"><b>Home</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about_us.html"><b>About Us</b></a>
+                            </li>
+       <!-- <li class="nav-item">
+                                <a class="nav-link" href="stories.html"><b>Stories</b></a>
+                            </li> -->
+                        
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="gallery.html" id="galleryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Gallery</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="galleryDropdown">
+                                    <a class="dropdown-item" href="gallery.html">Gallery</a>
+                                    <a class="dropdown-item" href="stories.html">Success Stories</a>
+                                
+                                </div>
+                                <style>
+                                    .dropdown-menu {
+                                        background-color: #f8f9fa;
+                                        border: 1px solid #ccc;
+                                    }
+                                
+                                    .dropdown-item:hover {
+                                        background-color: #e9ecef;
+                                    }
+                                </style>
+                                
+                            </li>   
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="donation.html"><b>Donate Now</b></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link custom-link" href="./login.php"><b>Apply Now</b></a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- <header class="container-fluid">
+        <div id="menu-jk" class="header-bottom">
+            <style>
+                #menu-jk .header-bottom .logo img {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
+
+                .header-top {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    background-color: #fff;
+                    /* Add background color to the fixed header if needed */
+                    z-index: 9999;
+                    /* Adjust the z-index as needed */
+                }
+
+                @media (max-width: 767px) {
+                    .header-top {
+                        position: fixed;
+                    }
+                }
+            </style>
+            <div class="container">
+                <div class="row nav-row">
+                    <div class="col-lg-3 col-md-12 logo">
+                        <a href="index.html">
+                            <img src="logo/project logo (1).png" alt="" height="100px" width="">
+                            <a data-toggle="collapse" data-target="#menu" href="#menu"><i
+                                    class="fas d-block d-lg-none small-menu fa-bars"></i></a>
+                        </a>
+                    </div>
+                    <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
+                        <br>
+                        <ul class="navbad">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html"><b>Home</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about_us.html"><b>About Us</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="stories.html"><b>Stories</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html"><b>Gallery</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact_us.html"><b>Contact</b></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link custom-link" href="./login.php"><b>Apply Now</b></a>
+                            </li>
+                            <style>
+                                .custom-link {
+                                    background-color: rgb(107, 205, 136);
+                                    color: rgb(9, 1, 1);
+                                    animation: blink-animation 1s steps(2, start) infinite;
+                                    /* Add other custom styles here */
+                                }
+                            
+                                @keyframes blink-animation {
+                                    to {
+                                        visibility: hidden;
+                                    }
+                                }
+                            </style>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> -->
+
+
+    <!--  ************************* Page Title Starts Here ************************** -->
+
+    <div class="" style="display: flex; justify-content: center; height: 0px;">
+
+
+
+
+    </div>
+
+
+    <!--  ************************* About Us Starts Here ************************** -->
+
+    <div class="" style="background-color: #edf1f5; display: flex; text-align: center;">
+        <div class="" style=" margin-left: 10px; font-size: 25px;">
+
+            <div class="">
+                <div class="">
+                    <br>
+                    <h2>About Our Charity: </h2> <br>
+                    <p style="font-size: 20px; ">
+                      We are a dedicated nonprofit foundation, committed to empowering underprivileged students beyond Class 10 (SSC). We provide non-refundable scholarships to deserving candidates, including girls, who face financial barriers to furthering their education. Our holistic approach includes conducting aptitude tests to help students choose the right career paths, offering continuous mentorship, and monitoring their academic progress. We also encourage participation in our free personality development programs, building their confidence to achieve successful careers. By supporting one individual in a family, we aim to create a ripple effect, inspiring others in their community and ultimately improving their quality of life..</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="about-us container-fluid">
+        <div class="container">
+            <div class="boxes">
+                <div class="row natur-row no-margin w-100">
+
+                    <div class="image-part col-md-6">
+                        <div class="about-quick-box row">
+                            <style>
+                                .about-quick-box.row {
+                                    display: flex;
+                                    flex-flow: row;
+                                    margin-bottom: 20px;
+                                    /* Adjust margin for smaller screens */
+                                }
+
+                                /* Responsive CSS */
+                                @media screen and (max-width: 991px) {
+                                    .image-part.col-md-6 {
+                                        flex: 0 0 100%;
+                                        /* Make the image-part full width for smaller screens */
+                                        max-width: 100%;
+                                        /* Ensure image-part takes full width */
+                                    }
+                                }
+
+                                @media screen and (max-width: 767px) {
+                                    .about-quick-box.row {
+                                        flex-direction: column;
+                                        /* Adjust layout to column for smaller screens */
+                                    }
+
+                                    .about-qcard {
+                                        padding: 20px;
+                                        width: 100%;
+                                        /* Adjust width to full for smaller screens */
+                                        height: auto;
+                                        /* Set height to auto for smaller screens */
+                                        margin-bottom: 20px;
+                                        /* Add margin-bottom for better separation */
+                                    }
+                                }
+                            </style>
+                            <!-- Volunteer -->
+                            <a href="./mentor.php">
+                                <div class="col-md-6">
+                                    <div class="about-qcard">
+                                        <i class="fas fa-user"></i>
+                                        <a href="./mentor.php">
+                                            <p>Become a Mentor</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- View Process -->
+                            <a href="./flow.html">
+                                <div class="col-md-6">
+                                    <div class="about-qcard">
+                                        <i class="fas fa-search-dollar red"></i>
+                                        <a href="./flow.html">
+                                            <p>Scholarship Process</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- chatbox -->
+                            <a href="chatbox.php">
+                                <div class="col-md-6">
+                                    <div class="about-qcard">
+                                        <i class="fas fa-comment"></i>
+                                        <a href = "./chatbox.php" >
+                                            <p>ChatBox</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Our Support -->
+                            <a href="./utility.html">
+                                <div class="col-md-6">
+                                    <div class="about-qcard">
+                                        <i class="fas fa-hands-helping blu"></i>
+                                        <a href="./utility.html">
+                                            <p>Our Support</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ################# Mission Vision Start Here #######################--->
+
+    <section class="container-fluid mission-vision">
+        <div class="container">
+            <div class="row mission">
+                <div class="col-md-6 mv-det text-center align-self-center" style="margin-top: -65px;">
+
+                    <h1 class="mb-4">Our Mission
+
+                    </h1><br>
+                    <p>
+
+                        <!--The Ashraya Foundation, a private-->
+                        <!--initiative, is dedicated to providing scholarships to deserving students. By offering financial-->
+                        <!--support, Ashraya aims to empower talented individuals from underserved backgrounds to pursue-->
+                        <!--their educational goals. Through this commitment, Ashraya seeks to create opportunities for-->
+                        <!--academic success and contribute to the development of a brighter future for motivated students.-->
+                        Our mission is to empower deserving students from underprivileged backgrounds by providing non-refundable scholarships, personalized mentorship, and career guidance. We strive to foster holistic development through educational support and personality development programs, enabling these individuals to become confident, successful professionals and role models within their families and communities.
+                    </p>
+                </div>
+                <div class="col-md-6 mv-img">
+                    <img src="As gallery/Laptop presented to an engineering student.JPG" alt="">
+                </div>
+            </div>
+            <div class="row vision">
+                <div class="col-md-6 mv-img">
+                    <img src="As gallery/Aptitude test.jpg" alt="">
+                </div>
+                <div class="col-md-6 mv-det text-center align-self-center">
+                    <h1 class="mb-4">Our Vision</h1><br>
+                    <p class="font-size-lg">
+                        <!--The Ashraya Foundation envisions a world where every deserving student has the opportunity to-->
+                        <!--pursue their educational aspirations without financial constraints. Our mission is to provide-->
+                        <!--scholarships to talented and underprivileged individuals, enabling them to access quality-->
+                        <!--education and unlock their full potential. Through our scholarship programs, we aim to break-->
+                        <!--down barriers to education and empower students to pursue their dreams, regardless of their-->
+                        <!--socio-economic background. Our ultimate goal is to create a more equitable society where-->
+                        <!--education serves as a pathway to opportunity and social mobility for all.-->
+                        
+                        Our vision is to create a world where every student, regardless of their financial circumstances, has the opportunity to pursue higher education and achieve their full potential. By transforming individual lives, we aim to uplift entire families and inspire communities, ultimately contributing to a more equitable and prosperous societ
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <style>
+        @media screen and (max-width: 400px) {
+            .trust {
+                margin-bottom: 3px;
+            }
+        }
+    </style>
+
+    <!-- Team Section Starts Here -->
+    <section class="team-section" style="padding: 50px 0; background-color: #edf1f5;">
+        <div class="container">
+            <h1 style="text-align: center;"> <b>Our Honarable Trustees </b></h1><br>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="team-member" style="text-align: center; margin-bottom: 30px;">
+                        <img src="Team/Bindlish.jpg" alt="Team Member"
+                            style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 15px;">
+                        <h3 class="trust">Bindilish Parmod</h3>
+                        <p style="font-size: 18px; color: #888;">Trustee</p>
+                    </div> <br>
+                </div>
+                <div class="col-md-3">
+                    <div class="team-member" style="text-align: center; margin-bottom: 30px;">
+                        <img src="Team/chaitanya Buch.jpg" alt="Team Member"
+                            style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 15px;">
+                        <h3 class="trust">Chaitanya Buch </h3>
+                        <p style="font-size: 18px; color: #888;">Trustee</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="team-member" style="text-align: center; margin-bottom: 30px;">
+                        <img src="Team/Gauri Shankar.jpeg" alt="Team Member"
+                            style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 15px;">
+                        <h3 class="trust">Gauri S Jhalani</h3>
+                        <p style="font-size: 18px; color: #888;">Trustee</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="team-member" style="text-align: center; margin-bottom: 30px;">
+                        <img src="Team/kamlesh kedia.jpg" alt="Team Member"
+                            style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 15px;">
+                        <h3 class="trust">Kamlesh Kedia</h3>
+                        <p style="font-size: 18px; color: #888;">Trustee</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="team-member" style="text-align: center; margin-bottom: 30px;">
+                        <img src="Team/Naresh Jain.jpeg" alt="Team Member"
+                            style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 15px;">
+                        <h3 class="trust">Adv. Naresh Jain</h3>
+                        <p style="font-size: 18px; color: #888;">Trustee</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="team-member" style="text-align: center; margin-bottom: 30px;">
+                        <img src="Team/Mahendra-Mehta-e1579932102769.webp" alt="Team Member"
+                            style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 15px;">
+                        <h3 class="trust">Dr. Mahendra Mehta </h3>
+                        <p style="font-size: 18px; color: #888;">Trustee</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4"> <!-- Added another offset -->
+                    <div class="team-member" style="text-align: center; margin-bottom: 30px;">
+                        <img src="Team/mitara jangid.png" alt="Team Member"
+                            style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 15px;">
+                        <h3 class="trust">Mitaram Jangid </h3>
+                        <p style="font-size: 18px; color: #888;">Trustee</p>
+                    </div>
+                </div>
+    </section>
+
+
+    <!--  ************************* Footer Starts Here ************************** -->
+
+    <footer class="footer">
+        <style>
+            @media screen and (max-width: 767px) {
+                .footer {
+                    /* margin-left: 35px; */
+                }
+            }
+        </style>
+
+        <script>
+            function showqr() {
+                var imageContainer = document.querySelector('.qr');
+                if (imageContainer.style.display === 'none') {
+                    imageContainer.style.display = 'block';
+                } else {
+                    imageContainer.style.display = 'none';
+                }
+            }
+        </script>
+
+        <script>
+            function toggleImageSize() {
+                var image = document.getElementById('qr');
+                if (image.style.width === '80%') {
+                    image.style.width = '100%';
+                } else {
+                    image.style.width = '80%';
+                }
+            }
+        </script>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12" style="color: white;">
+                    <h2 style="color: white;">Talk to Us</h2>
+                    <div class="contact-info" style="margin-bottom: 15px;">
+                        <i class="fas fa-envelope" style="margin-right: 10px;"></i>
+                        <a href="mailto:ashraya7514@gmail.com" style="color: white; text-decoration: none;">ashraya7514@gmail.com</a>
+                    </div>
+                    <div class="contact-info" style="margin-bottom: 15px;">
+                        <i class="fas fa-phone" style="margin-right: 10px;"></i>
+                        <a href="tel:+919821302280" style="color: white; text-decoration: none;">+91 9821302280</a><br>
+                        <i class="fas fa-phone" style="margin-right: 10px;"></i>
+                        <a href="tel:+919322244292" style="color: white; text-decoration: none;">+91 9322244292</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 map-img">
+                    <h2>Contact Us</h2>
+                    <address class="md-margin-bottom-40">
+                        <span><i class="fas fa-map-marker-alt"></i> Meet us here:</span><br>
+                        A 2306, Oberoi Woods, Mohan Gokhale Rd, Goregaon, Mumbai, Maharashtra 400063<br>
+                        <span><i class="fas fa-phone"></i> <a href="tel:+91 9821302280,">Phone: +91 9821302280 /
+                                9322244292
+                        </span> </a><br>
+                        <span><i class="fas fa-envelope"></i> <a href="mailto:ashraya7514@gmail.com"> Email:
+                                ashraya7414@gmail.com</span> </a><br>
+                        <span><i class="fas fa-globe"></i> Website: www.ashrayafoundation.net</span><br>
+                    </address>
+                </div>
+
+                    <div class="col-md-3 col-sm-12 map-img">
+                        <h2>Donation Details:</h2>
+                        <address class="md-margin-bottom-40">
+                           
+                            <!-- +91 9821302280 / 9322244292<br> -->
+                            <!-- ashraya7414@gmail.com <br> -->
+                            <!-- BRANCH: www.ashrayafoundation.net<br> -->
+                            Section 80G of the Income Tax Act, 1961, allows donors to claim deductions on donations made
+                            to
+                            eligible charitable organizations .
+                            <br>
+                            <br>
+                          
+                          <a href="donation.html"> <button onclick="scrollToSection('enq')"
+                                style="background-color:#5cc982; width: 140px; height: 40px; border-radius: 15px; cursor: pointer;" >
+                                
+                                Donate Now!
+                            </button>
+                            </a>
+                        </address>
+                    </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <div class="copy">
+        <style>
+            @media screen and (max-width: 767px) {
+                .copy {
+                    /* margin-left: 25px; */
+                }
+            }
+        </style>
+    </div>
+
+    <div class="copy">
+        <style>
+            @media screen and (max-width: 767px) {
+                .copy {
+                    /* margin-left: 25px; */
+                }
+            }
+        </style>
+        <div class="container">
+                           <a href="https://www.ashrayafoundation.net/">2023 &copy; All Rights Reserved | Designed and Developed by Neural TechSoft</a>
+
+            <span>
+                <a><i class="fab fa-github"></i></a>
+                <a><i class="fab fa-google-plus-g"></i></a>
+                <a><i class="fab fa-pinterest-p"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-facebook-f"></i></a>
+            </span>
+        </div>
+
+    </div>
+
+
+</body>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>

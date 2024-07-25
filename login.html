@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .form-container {
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        .hidden {
+            display: none;
+        }
+        .show {
+            display: block;
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .hide {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+    <div class="bg-white rounded-lg shadow-lg p-8 sm:w-96">
+        <h2 id="form-title" class="text-3xl font-semibold text-center mb-6">Login</h2>
+        <form id="login-form" class="space-y-6 form-container show" action="login_process.php" method="POST">
+            <div class="space-y-4">
+                <label for="username" class="block font-semibold text-lg">Username</label>
+                <input type="text" name="username" class="block w-full border border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring focus:ring-green-500 focus:ring-opacity-50 px-4 py-2 text-lg" required>
+            </div>
+            <div class="space-y-4">
+                <label for="password" class="block font-semibold text-lg">Password</label>
+                <input type="password" name="password" class="block w-full border border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring focus:ring-green-500 focus:ring-opacity-50 px-4 py-2 text-lg" required>
+            </div>
+            <button type="submit" class="block w-full bg-green-500 text-white font-semibold rounded-md py-3 transition duration-300 hover:bg-green-600 text-lg">Login</button>
+            <p class="text-center mt-4">Don't have an account? <span id="toggle-register" class="text-green-500 cursor-pointer hover:underline">Register now</span>.</p>
+        </form>
+        <form id="register-form" class="space-y-6 form-container hidden" action="register_process.php" method="POST">
+            <div class="space-y-4">
+                <label for="username" class="block font-semibold text-lg">Username</label>
+                <input type="text" name="username" class="block w-full border border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring focus:ring-green-500 focus:ring-opacity-50 px-4 py-2 text-lg" required>
+            </div>
+            <div class="space-y-4">
+                <label for="password" class="block font-semibold text-lg">Password</label>
+                <input type="password" name="password" class="block w-full border border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring focus:ring-green-500 focus:ring-opacity-50 px-4 py-2 text-lg" required>
+            </div>
+            <button type="submit" class="block w-full bg-green-500 text-white font-semibold rounded-md py-3 transition duration-300 hover:bg-green-600 text-lg">Register</button>
+            <p class="text-center mt-4">Already have an account? <span id="toggle-login" class="text-green-500 cursor-pointer hover:underline">Login here</span>.</p>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loginForm = document.getElementById("login-form");
+            const registerForm = document.getElementById("register-form");
+            const toggleLoginForm = document.getElementById("toggle-login");
+            const toggleRegisterForm = document.getElementById("toggle-register");
+            const formTitle = document.getElementById("form-title");
+
+            toggleRegisterForm.addEventListener("click", function() {
+                loginForm.classList.replace("show", "hide");
+                setTimeout(() => {
+                    loginForm.classList.add("hidden");
+                    registerForm.classList.remove("hidden");
+                    registerForm.classList.replace("hide", "show");
+                    formTitle.textContent = "Register";
+                }, 500);
+            });
+
+            toggleLoginForm.addEventListener("click", function() {
+                registerForm.classList.replace("show", "hide");
+                setTimeout(() => {
+                    registerForm.classList.add("hidden");
+                    loginForm.classList.remove("hidden");
+                    loginForm.classList.replace("hide", "show");
+                    formTitle.textContent = "Login";
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>

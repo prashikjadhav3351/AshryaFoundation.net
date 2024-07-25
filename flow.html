@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AshrayaFoundation.net</title>
+    <link rel="shortcut icon" href="./fv2.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <div id="menu-jk" class="header-bottom">
+            <style>
+              /* Ensure logo container doesn't collapse and is aligned to the left */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Make the logo image responsive */
+.logo img {
+        max-width: 140%;
+    height: 140%; /* Maintain aspect ratio */
+}
+
+/* Adjust the fixed header properties */
+.header-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Add background color to the fixed header if needed */
+    z-index: 9999; /* Adjust the z-index as needed */
+}
+
+@media (max-width: 767px) {
+    .header-top {
+        position: fixed;
+    }
+}
+
+.custom-link {
+    background-color: rgb(107, 205, 136);
+    color: rgb(9, 1, 1);
+    animation: blink-animation 1s steps(2, start) infinite;
+    /* Add other custom styles here */
+}
+
+
+
+/* Flexbox for the nav-row to ensure alignment */
+.nav-row {
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust the navigation menu to align properly next to the logo */
+.nav-col {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+            </style>
+            <div class="container">
+                <div class="row nav-row">
+                    <div class="col-lg-3 col-md-12 logo">
+                        <a href="index.php">
+                            <img src="logo/neww sizw.png" alt="Logo" height="400px" width="600px">
+                        <style>
+                            
+                            
+                        </style>
+
+                            <a data-toggle="collapse" data-target="#menu" href="#menu"><i
+                                    class="fas d-block d-lg-none small-menu fa-bars"></i></a>
+                        </a>
+                    </div>
+                    <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
+                        <br>
+                        <ul class="navbad">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.php"><b>Home</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about_us.html"><b>About Us</b></a>
+                            </li>
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="gallery.html" id="galleryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>Gallery</b>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="galleryDropdown">
+                                    <a class="dropdown-item" href="gallery.html">Gallery</a>
+                                    <a class="dropdown-item" href="stories.html">Success Stories</a>
+                                
+                                </div>
+                                <style>
+                                    .dropdown-menu {
+                                        background-color: #f8f9fa;
+                                        border: 1px solid #ccc;
+                                    }
+                                
+                                    .dropdown-item:hover {
+                                        background-color: #e9ecef;
+                                    }
+                                </style>
+                                
+                            </li>   
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="donation.html"><b>Donate Now</b></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link custom-link" href="./login.php"><b>Apply Now</b></a>
+                            </li>
+                       
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <style>
+        .flow {
+            font-family: Arial, sans-serif;
+            background-color: #edf1f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            width: 100%;
+            animation: fadeIn 1s ease both;
+            transition: transform 0.3s ease;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            /* justify-content: flex-start; */
+            /* margin-bottom: 15px; */
+            position: relative;
+
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width: 320px) {
+            .step {}
+
+            .image1 {}
+
+            .posts {}
+        }
+
+        .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #4caf50;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .circle:hover {
+            transform: scale(1.1);
+        }
+
+        .circle+h2:hover {
+            color: #4caf50;
+        }
+
+
+        /* Wobble animation */
+        @keyframes wobble {
+            25% {
+                transform: translateX(3px) rotate(3deg);
+            }
+
+            50% {
+                transform: translateX(-3px) rotate(-3deg);
+            }
+
+            75% {
+                transform: translateX(2px) rotate(2deg);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .wobble:hover {
+            animation: wobble 0.6s ease-in-out both;
+        }
+
+        /* Fade in animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Media Query for responsiveness */
+        @media only screen and (min-width: 600px) {
+            .box {
+                max-width: 50%;
+            }
+        }
+
+        .posts {
+            display: flex;
+
+
+        }
+
+        .step {}
+
+        .image1 {
+            height: 40%;
+            width: 40%;
+            object-fit: cover;
+
+
+        }
+
+        .step p {}
+
+        .posts {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .posts:nth-child(2n+1) {
+            flex-direction: row-reverse;
+        }
+
+
+        @media screen and (max-width: 400px) {
+
+
+            .step {
+                flex-direction: column;
+            }
+
+            .image1 {
+                display: none;
+
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <div class="flow">
+        <h1>Ashraya Foundation - What We Do</h1>
+        <p style="text-align: center;">These are the steps to be followed at ASHRAYA Foundation for scholarships.</p>
+        <div class="box wobble" onclick="toggleBox(this)">
+            <div class="posts">
+                <div class="image1">
+                    <img src="./way-concept-illustration/3369493.jpg" alt="">
+                </div>
+                <div class="step">
+
+                    <div class="circle">1</div>
+                    <h2>Apply for Scholarship:</h2>
+
+
+                    <p>- Gather necessary documents (transcripts, recommendation letters, etc.).</p>
+                    <p>- Fill out the scholarship application form.</p>
+                    <p>- Submit the application before the deadline.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box wobble" onclick="toggleBox(this)">
+            <div class="posts">
+                <div class="image1">
+                    <img src="./product-quality-concept-illustration/5995357.jpg" alt="">
+                </div>
+                <div class="step">
+                    <div class="circle">2</div>
+                    <h2>Scholarship Eligibility Review:</h2>
+
+                    <p>- Review committee assesses applications.</p>
+                    <p>- Applicants meeting criteria move to next stage.</p>
+                    <p>- Applicants not meeting criteria are notified.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box wobble" onclick="toggleBox(this)">
+            <div class="posts">
+                <div class="image1">
+                    <img src="./lesson-concept-illustration/6342494.jpg" alt="">
+                </div>
+                <div class="step">
+                    <div class="circle">3</div>
+                    <h2>Aptitude Test:</h2>
+
+                    <p>- Eligible applicants are scheduled for an aptitude test.</p>
+                    <p>- Test evaluates academic abilities, skills, and potential.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box wobble" onclick="toggleBox(this)">
+            <div class="posts">
+                <div class="image1">
+                    <img src="./isometric-characters-illustration-human-resources-doing-interview/24421.jpg" alt="">
+                </div>
+                <div class="step">
+                    <div class="circle">4</div>
+                    <h2>Interview:</h2>
+                    <p>- Successful test takers proceed to the interview round.</p>
+                    <p>- Interview assesses candidates' motivation, goals, and suitability for the scholarship.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box wobble" onclick="toggleBox(this)">
+            <div class="posts">
+                <div class="image1">
+                    <img src="./piggy-bank-concept-illustration/5209019.jpg" alt="">
+                </div>
+                <div class="step">
+                    <div class="circle">5</div>
+                    <h2>Fund Distribution Decision:</h2>
+
+                    <p>- Committee reviews test scores, interview performance, and overall application.</p>
+                    <p>- Decide on scholarship recipients based on merit.</p>
+                    <p>- Notify selected candidates.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box wobble" onclick="toggleBox(this)">
+            <div class="posts">
+                <div class="image1">
+                    <img src="./quitting-time-concept-illustration/4113378.jpg" alt="">
+                </div>
+                <div class="step">
+                    <div class="circle">6</div>
+                    <h2>Assign Mentors:</h2>
+
+                    <p>- Selected candidates are assigned with a mentor.</p>
+                    <p>- Mentors are in constant touch with students and provide necessary guidance.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="box wobble" onclick="toggleBox(this)">
+            <div class="posts">
+                <div class="image1">
+                    <img src="./hand-drawn-flat-design-mba-illustration-illustration/6895877.jpg" alt="">
+                </div>
+                <div class="step">
+                    <div class="circle">7</div>
+                    <h2>Student Career Tracking:</h2>
+
+                    <p>- Selected candidates enroll in the educational institution.</p>
+                    <p>- Institution tracks academic progress and extracurricular activities.</p>
+                    <p>- Regular check-ins and evaluations to monitor performance and ensure compliance with scholarship
+                        requirements.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    <script>
+        function toggleBox(box) {
+            box.classList.toggle('expanded');
+        }
+    </script>
+
+
+<!-- Footer start here -->
+
+<footer class="footer">
+    <style>
+        @media screen and (max-width: 767px) {
+            .footer {
+                /* margin-left: 35px; */
+            }
+        }
+    </style>
+
+    <script>
+        function showqr() {
+            var imageContainer = document.querySelector('.qr');
+            if (imageContainer.style.display === 'none') {
+                imageContainer.style.display = 'block';
+            } else {
+                imageContainer.style.display = 'none';
+            }
+        }
+    </script>
+
+    <script>
+        function toggleImageSize() {
+            var image = document.getElementById('qr');
+            if (image.style.width === '80%') {
+                image.style.width = '100%';
+            } else {
+                image.style.width = '80%';
+            }
+        }
+    </script>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12" style="color: white;">
+                <h2 style="color: white;">Talk to Us</h2>
+                <div class="contact-info" style="margin-bottom: 15px;">
+                    <i class="fas fa-envelope" style="margin-right: 10px;"></i>
+                    <a href="mailto:ashraya7514@gmail.com" style="color: white; text-decoration: none;">ashraya7514@gmail.com</a>
+                </div>
+                <div class="contact-info" style="margin-bottom: 15px;">
+                    <i class="fas fa-phone" style="margin-right: 10px;"></i>
+                    <a href="tel:+919821302280" style="color: white; text-decoration: none;">+91 9821302280</a><br>
+                    <i class="fas fa-phone" style="margin-right: 10px;"></i>
+                    <a href="tel:+919322244292" style="color: white; text-decoration: none;">+91 9322244292</a>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-12 map-img">
+                <h2>Contact Us</h2>
+                <address class="md-margin-bottom-40">
+                    <span><i class="fas fa-map-marker-alt"></i> Meet us here:</span><br>
+                    A 2306, Oberoi Woods, Mohan Gokhale Rd, Goregaon, Mumbai, Maharashtra 400063<br>
+                    <span><i class="fas fa-phone"></i> <a href="tel:+91 9821302280,">Phone: +91 9821302280 /
+                            9322244292
+                    </span> </a><br>
+                    <span><i class="fas fa-envelope"></i> <a href="mailto:ashraya7514@gmail.com"> Email:
+                            ashraya7414@gmail.com</span> </a><br>
+                    <span><i class="fas fa-globe"></i> Website: www.ashrayafoundation.net</span><br>
+                </address>
+            </div>
+
+                    <div class="col-md-3 col-sm-12 map-img">
+                        <h2>Donation Details:</h2>
+                        <address class="md-margin-bottom-40">
+                           
+                            <!-- +91 9821302280 / 9322244292<br> -->
+                            <!-- ashraya7414@gmail.com <br> -->
+                            <!-- BRANCH: www.ashrayafoundation.net<br> -->
+                            Section 80G of the Income Tax Act, 1961, allows donors to claim deductions on donations made
+                            to
+                            eligible charitable organizations .
+                            <br>
+                            <br>
+                          
+                          <a href="donation.html"> <button onclick="scrollToSection('enq')"
+                                style="background-color:#5cc982; width: 140px; height: 40px; border-radius: 15px; cursor: pointer;" >
+                                
+                                Donate Now!
+                            </button>
+                            </a>
+                        </address>
+                    </div>
+        </div>
+    </div>
+
+
+</footer>
+<div class="copy">
+    <style>
+        @media screen and (max-width: 767px) {
+            .copy {
+                /* margin-left: 25px; */
+            }
+        }
+    </style>
+</div>
+
+<div class="copy">
+    <style>
+        @media screen and (max-width: 767px) {
+            .copy {
+                /* margin-left: 25px; */
+            }
+        }
+    </style>
+    <div class="container">
+     <a href="https://www.ashrayafoundation.net/">2023 &copy; All Rights Reserved | Designed and Developed by Neural TechSoft</a>
+
+        <span>
+            <a><i class="fab fa-github"></i></a>
+            <a><i class="fab fa-google-plus-g"></i></a>
+            <a><i class="fab fa-pinterest-p"></i></a>
+            <a><i class="fab fa-twitter"></i></a>
+            <a><i class="fab fa-facebook-f"></i></a>
+        </span>
+    </div>
+
+</div>
+
+
+</body>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>
